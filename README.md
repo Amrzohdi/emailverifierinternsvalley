@@ -5,7 +5,7 @@ a simple REST-based JSON API enabling you to thoroughly check and verify email a
 
 
 # Error Codes
-status: 200 email is exist.
+status: 200 email does exist.
 
 status: 404 not found. email doesn't exist
 
