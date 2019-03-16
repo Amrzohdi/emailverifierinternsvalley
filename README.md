@@ -1,24 +1,25 @@
-# README
+#Introduction
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+a simple REST-based JSON API enabling you to thoroughly check and verify email addresses right at the point of entry into your system.
 
-Things you may want to cover:
 
-* Ruby version
+#Error Codes
+status: 200 email is exist.
 
-* System dependencies
+status: 404 not found. email doesn't exist
 
-* Configuration
+#Rate limit
+5 requests for email checking per minute, for an ip address.
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+#examples
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    curl --location --request GET "https://emailverifierinternsvalley.herokuapp.com/check?email=amr.zohdie@gmail.com"
+.  
+    
+    response:
+            status: 200 － OK
+            {
+              "message": "email amr.zohdie@gmail.com exist"
+            }      
