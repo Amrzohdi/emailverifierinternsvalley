@@ -24,3 +24,8 @@ status: 404 not found. email doesn't exist
             {
               "message": "email amr.zohdie@gmail.com exist"
             }      
+
+
+# Pricing algorithm Refactor.
+
+[pricing_algorithm.rb](https://github.com/Amrzohdi/emailverifierinternsvalley/blob/master/pricing_algorithm.rb)
